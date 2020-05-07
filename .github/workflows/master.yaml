@@ -1,0 +1,22 @@
+name: Master
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Test
+        run: make test
+      - name: Log in to quay.io
+        run: |
+          docker login \
+            -u ${{ secrets.QUAY_USERNAME }} \
+            -p ${{ secrets.QUAY_PASSWORD }} \
+            quay.io
+      - name: Push to quay.io
+        run: make push
