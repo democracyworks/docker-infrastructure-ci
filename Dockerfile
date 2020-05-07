@@ -12,6 +12,7 @@ RUN apt-get update\
     curl \
     gnupg \
     jq \
+    make \
     python3-pip \
     python3-setuptools \
     unzip \
