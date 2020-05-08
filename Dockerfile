@@ -10,6 +10,7 @@ ARG TERRAFORM_VERSION
 RUN apt-get update\
   && apt-get -y install --no-install-recommends \
     curl \
+    git \
     gnupg \
     jq \
     make \
