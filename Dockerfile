@@ -14,6 +14,7 @@ RUN apt-get update\
     gnupg \
     jq \
     make \
+    openssh-client \
     python3-pip \
     python3-setuptools \
     unzip \
