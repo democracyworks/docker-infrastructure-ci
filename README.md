@@ -43,5 +43,5 @@ docker run -it --rm quay.io/democracyworks/infrastructure-ci sam --version
 
 ## Releasing
 
-1. Commit your changes to `master`. A continuous integration process will build,
+1. Commit your changes to `main`. A continuous integration process will build,
    tag, and push a new image to the image repository.
