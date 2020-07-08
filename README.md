@@ -6,9 +6,9 @@ Software useful for running continuous integration jobs at Democracy Works.
 
 | Name | Version |
 | --- | --- |
-| AWS CLI | v1.18.69 |
-| AWS SAM CLI | v0.52.0 |
-| Terraform | v0.12.26 |
+| AWS CLI | v1.18.96 |
+| AWS SAM CLI | v0.53.0 |
+| Terraform | v0.12.28 |
 
 Other supporting software packages include:
 
