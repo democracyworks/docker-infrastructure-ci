@@ -1,9 +1,9 @@
 DOCKER_IMAGE ?= quay.io/democracyworks/infrastructure-ci
-DOCKER_TAG = v1.7.0
+DOCKER_TAG ?= v1.8.0
 
-AWSCLI_VERSION = 1.18.96
+AWSCLI_VERSION = 1.18.147
 SAM_VERSION = 0.53.0
-TF_VERSION = 0.12.28
+TF_VERSION = 0.12.29
 
 .DEFAULT_GOAL := build
 
