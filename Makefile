@@ -1,30 +1,28 @@
 DOCKER_IMAGE ?= quay.io/democracyworks/infrastructure-ci
-DOCKER_TAG ?= v1.8.0
+DOCKER_TAG ?= v2.0.0
 
-AWSCLI_VERSION = 1.18.147
-SAM_VERSION = 0.53.0
-TF_VERSION = 0.12.29
+AWSCLI_VERSION = 2.0.56
+SAM_VERSION = 1.6.2
+TF_VERSION = 0.13.4
 
 .DEFAULT_GOAL := build
 
 .PHONY: build push help
 
 build:
-	docker build --pull -t $(DOCKER_IMAGE):latest \
-		--build-arg AWSCLI_VERSION=$(AWSCLI_VERSION) \
-		--build-arg AWS_SAM_CLI_VERSION=$(SAM_VERSION) \
-		--build-arg TERRAFORM_VERSION=$(TF_VERSION) \
+	docker build --pull -t "$(DOCKER_IMAGE):$(DOCKER_TAG)" \
+		--build-arg AWSCLI_VERSION="$(AWSCLI_VERSION)" \
+		--build-arg AWS_SAM_CLI_VERSION="$(SAM_VERSION)" \
+		--build-arg TERRAFORM_VERSION="$(TF_VERSION)" \
 		.
 
 push: build
-	docker tag $(DOCKER_IMAGE):latest $(DOCKER_IMAGE):$(DOCKER_TAG)
-	docker push $(DOCKER_IMAGE):latest
 	docker push $(DOCKER_IMAGE):$(DOCKER_TAG)
 
 test: build
-	docker run --rm $(DOCKER_IMAGE):latest aws --version | grep -s $(AWSCLI_VERSION)
-	docker run --rm $(DOCKER_IMAGE):latest terraform version | grep -s $(TF_VERSION)
-	docker run --rm $(DOCKER_IMAGE):latest sam --version | grep -s $(SAM_VERSION)
+	docker run --rm $(DOCKER_IMAGE):$(DOCKER_TAG) aws --version | grep -s $(AWSCLI_VERSION)
+	docker run --rm $(DOCKER_IMAGE):$(DOCKER_TAG) terraform version | grep -s $(TF_VERSION)
+	docker run --rm $(DOCKER_IMAGE):$(DOCKER_TAG) sam --version | grep -s $(SAM_VERSION)
 
 help:
 	@echo "build: Build the Docker container."
