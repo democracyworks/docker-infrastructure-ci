@@ -6,9 +6,9 @@ Software useful for running continuous integration jobs at Democracy Works.
 
 | Name | Version |
 | --- | --- |
-| AWS CLI | v1.18.96 |
-| AWS SAM CLI | v0.53.0 |
-| Terraform | v0.12.28 |
+| AWS CLI | v2.1.1 |
+| AWS SAM CLI | v1.10.0 |
+| Terraform | v0.13.5 |
 
 Other supporting software packages include:
 
@@ -34,7 +34,8 @@ docker run -it --rm quay.io/democracyworks/infrastructure-ci sam --version
 
 | Variable | Description | Default |
 | --- | --- | --- |
-| `DOCKER_IMAGE` | Docker image to build. | `quay.io/democracyworks/infrastructure-ci` |
+| `DOCKER_IMAGE` | Docker image to build | `009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci` |
+| `DOCKER_TAG` | Docker image tag | `v2.1.0` |
 
 ## Development
 

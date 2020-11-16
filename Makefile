@@ -1,8 +1,8 @@
 DOCKER_IMAGE ?= 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci
 DOCKER_TAG ?= v2.1.0
 
-AWSCLI_VERSION = 2.0.61
-SAM_VERSION = 1.7.0
+AWSCLI_VERSION = 2.1.1
+SAM_VERSION = 1.10.0
 TF_VERSION = 0.13.5
 
 .DEFAULT_GOAL := build
