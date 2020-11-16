@@ -1,4 +1,4 @@
-DOCKER_IMAGE ?= quay.io/democracyworks/infrastructure-ci
+DOCKER_IMAGE ?= 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci
 DOCKER_TAG ?= v2.1.0
 
 AWSCLI_VERSION = 2.0.61
