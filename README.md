@@ -39,7 +39,7 @@ docker run -it --rm quay.io/democracyworks/infrastructure-ci sam --version
 | Variable | Description | Default |
 | --- | --- | --- |
 | `DOCKER_IMAGE` | Docker image to build | `009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci` |
-| `DOCKER_TAG` | Docker image tag | `v2.2.0` |
+| `DOCKER_TAG` | Docker image tag | `v2.3.0` |
 
 ## Development
 

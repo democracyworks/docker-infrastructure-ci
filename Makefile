@@ -1,5 +1,5 @@
 DOCKER_IMAGE ?= 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci
-DOCKER_TAG ?= v2.2.0
+DOCKER_TAG ?= v2.3.0
 
 AWSCLI_VERSION = 2.1.7
 KUBECTL_VERSION = 1.18.12
