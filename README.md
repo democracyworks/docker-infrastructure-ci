@@ -1,6 +1,7 @@
 # Infrastructure continuous integration Docker image
 
-Software useful for running continuous integration jobs at Democracy Works.
+Software useful for running infrastructure-specific continuous integration jobs
+at Democracy Works.
 
 ## Software
 
