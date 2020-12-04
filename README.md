@@ -8,12 +8,16 @@ Software useful for running continuous integration jobs at Democracy Works.
 | --- | --- |
 | AWS CLI | v2.1.1 |
 | AWS SAM CLI | v1.10.0 |
+| `kubectl` | v1.18.12 |
+| `kubeval` | v0.15.0 |
 | Terraform | v0.13.5 |
 
 Other supporting software packages include:
 
 - curl
+- git
 - jq
+- make
 
 ## Versioning
 
