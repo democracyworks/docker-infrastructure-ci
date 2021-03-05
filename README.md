@@ -30,9 +30,11 @@ indicate a bugfix related to the container itself.
 ## Usage
 
 ```sh
-docker run -it --rm quay.io/democracyworks/infrastructure-ci aws --version
-docker run -it --rm quay.io/democracyworks/infrastructure-ci terraform version
-docker run -it --rm quay.io/democracyworks/infrastructure-ci sam --version
+docker run -it --rm 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci aws --version
+docker run -it --rm 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci kubectl version --client
+docker run -it --rm 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci kubeval --version
+docker run -it --rm 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci terraform version
+docker run -it --rm 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci sam --version
 ```
 
 ## Configuration
@@ -40,7 +42,7 @@ docker run -it --rm quay.io/democracyworks/infrastructure-ci sam --version
 | Variable | Description | Default |
 | --- | --- | --- |
 | `DOCKER_IMAGE` | Docker image to build | `009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/infrastructure-ci` |
-| `DOCKER_TAG` | Docker image tag | `v2.3.0` |
+| `DOCKER_TAG` | Docker image tag | `v3.0.0` |
 
 ## Development
 
