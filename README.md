@@ -7,11 +7,11 @@ at Democracy Works.
 
 | Name | Version |
 | --- | --- |
-| AWS CLI | v2.1.29 |
+| AWS CLI | v2.1.30 |
 | AWS SAM CLI | v1.20.0 |
 | `kubectl` | v1.19.8 |
 | `kubeval` | v0.15.0 |
-| Terraform | v0.14.7 |
+| Terraform | v0.14.8 |
 
 Other supporting software packages include:
 
